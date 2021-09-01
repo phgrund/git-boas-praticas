@@ -1,0 +1,14 @@
+body {
+  background-color: rgb(25, 25, 25);
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.command {
+  background-color: rgb(50, 50, 50);
+  padding: .2em .3em;
+}
