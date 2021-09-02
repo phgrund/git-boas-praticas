@@ -30,9 +30,9 @@ img {
   max-width: 100%;
 }
 
-.summary {
-  color: white;
-  text-decoration: none !important;
+.summary a {
+  color: inherit;
+  text-decoration: underline;
 }
 
 .text-underline {
