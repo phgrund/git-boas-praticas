@@ -22,17 +22,23 @@
           <a href="#branches">Branches</a>
         </li>
         <li>
+          <a href="#prs">Pull Requests</a>
+        </li>
+        <li>
           <a href="#comentarios">Comentários</a>
         </li>
         <li>
           <a href="#gitlens">GitLens</a>
+        </li>
+        <li>
+          <a href="#advanced">Dicas Avançadas</a>
         </li>
       </ul>
       <section>
         <h2 id="commit">Commit</h2>
         <p>
           Os commits, que são feitos pelo comando <span class="command">git commit -m "mensagem"</span>,
-          devem ter em suas mensagens descrição, de forma clara, do que foi feito, a fim de facilitar o entendimento
+          devem ter em suas mensagens descrição, em português e, de forma clara, do que foi feito, a fim de facilitar o entendimento
           para outras pessoas que estão participando do projeto.
         </p>
         <img src="images/commit.gif" alt="Commit" />
@@ -45,7 +51,7 @@
         </p>
         <ul>
           <li>
-            <span class="command">main</span>,
+            <span class="command">master</span>,
             que mantém a release oficial do projeto, que será mandado para produção.
           </li>
           <li>
@@ -55,11 +61,19 @@
         </ul>
         <p>
           Para cada feature que for desenvolvida, deverá ser criada uma branch nova com o comando
-          <span class="command">git checkout -b nome_branch</span>
-          com nome da mesma sendo referente à feature que será feita.
-          Ex: <span class="text-underline">criacao_navbar</span>
+          <span class="command">git checkout -b nome_branch</span>,
+          com nome sendo suas iniciais em maiúsculo / feature que será feita.
+          Ex: <span class="text-underline">PHRG/criacao_navbar</span>
         </p>
         <img src="images/branches.gif" alt="Branches" />
+      </section>
+      <section>
+        <h2 id="prs">Pull Requests</h2>
+        <p>
+          Após terminar a sua feature em uma branch, deverá ser feito um pull request pelo GitHub
+          para a branch <span class="command">develop</span>, que será analisado e, ou aprovado e mergeado,
+          ou recusado com algum comentário do que deve ser alterado para ser aceito.
+        </p>
       </section>
       <section>
         <h2 id="comentarios">Comentários</h2>
@@ -75,9 +89,27 @@
         </p>
         <img src="https://raw.githubusercontent.com/eamodio/vscode-gitlens/main/images/docs/revision-navigation.gif" alt="GitLens" />
       </section>
+      <section>
+        <h2 id="advanced">
+          Dicas Avançadas
+        </h2>
+        <p>
+          Neste vídeo abaixo, encontram-se várias dicas avançadas para Git.
+        </p>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/ecK3EnyGD8o"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          style="max-width: 100%"
+        ></iframe>
+      </section>
     </main>
     <footer class="text-center">
-      Feito por Paulo Henrique
+      Feito por Paulo Henrique - Laboratório de Engenharia de Software
     </footer>
     <script type="module" src="/main.js"></script>
   </body>
